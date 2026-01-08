@@ -15,12 +15,13 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
- "scripts": {
+"scripts": {
   "start": "react-scripts start",
-  "build": "CI=false npx react-scripts build",
+  "build": "npx --yes react-scripts@5.0.1 build",
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 },
+
 
   "eslintConfig": {
     "extends": [
