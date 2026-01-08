@@ -1,8 +1,11 @@
 import axios from "axios";
 
-// 🔗 Base API instance
+/**
+ * Axios instance
+ * Base URL: http://localhost:5000/api
+ */
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL + "/api",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // =====================
@@ -11,9 +14,12 @@ const API = axios.create({
 
 // Get products (with optional category)
 export const getProducts = async (category) => {
-  const res = await API.get(
-    category ? `/products?category=${category}` : "/products"
-  );
+  const url =
+    category && category !== "all"
+      ? `/products?category=${category}`
+      : "/products";
+
+  const res = await API.get(url);
   return res.data;
 };
 
