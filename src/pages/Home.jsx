@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import Products from "./Products";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <Categories />   {/* ✅ NEW */}
       <Products featured/>
+      <Footer />
     </>
   );
 }
