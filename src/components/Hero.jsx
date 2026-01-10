@@ -34,7 +34,7 @@ function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d"
+        src="https://unsplash.com/photos/assorted-color-clothes-OYYE4g-I5ZQ"
         alt="Fashion collection banner"   
         className="rounded-2xl shadow-xl"
       />

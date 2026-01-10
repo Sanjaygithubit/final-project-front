@@ -6,7 +6,7 @@ function Categories() {
       title: "Men",
       category: "men",
       image:
-        "https://images.unsplash.com/photo-1521334884684-d80222895322",
+        "https://unsplash.com/photos/man-wearing-green-crew-neck-t-shirt-looking-upwards-lkMJcGDZLVs",
     },
     {
       title: "Women",
